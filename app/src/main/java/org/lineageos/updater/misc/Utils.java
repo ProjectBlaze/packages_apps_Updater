@@ -413,6 +413,7 @@ public class Utils {
     public static boolean isRecoveryUpdateExecPresent() {
         return new File(Constants.UPDATE_RECOVERY_EXEC).exists();
     }
+<<<<<<< HEAD:app/src/main/java/org/lineageos/updater/misc/Utils.java
 
     public static String getDisplayVersion(String version) {
         float floatVersion = 0;
@@ -424,4 +425,6 @@ public class Utils {
         // Lineage 20 and up should only be integer values (we don't have minor versions anymore)
         return (floatVersion >= 20) ? String.valueOf((int)floatVersion) : version;
     }
+=======
+>>>>>>> 0349043 (Revert "Updater: 20 and up are integers!"):src/org/lineageos/updater/misc/Utils.java
 }
